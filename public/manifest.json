@@ -1,11 +1,11 @@
 {
-  "name": "Deriv Bot - Automated Trading Platform",
-  "short_name": "Deriv Bot",
-  "description": "Automated trading at your fingertips. No coding needed.",
+  "name": "ArkTraders Hub - Automated Trading Platform",
+  "short_name": "ArkTraders Hub",
+  "description": "Build and run automated trading bots without coding. Powerful strategies, visual bot builder, and real-time trading.",
   "start_url": "/?source=mobile",
   "display": "standalone",
-  "background_color": "#0e0e0e",
-  "theme_color": "#ff444f",
+  "background_color": "#0f4c81",
+  "theme_color": "#0f4c81",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
@@ -67,21 +67,21 @@
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Deriv Bot Dashboard"
+      "label": "ArkTraders Hub Dashboard"
     },
     {
       "src": "/assets/screenshots/mobile-screenshot.png",
       "sizes": "640x1136",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Deriv Bot Mobile View"
+      "label": "ArkTraders Hub Mobile View"
     }
   ],
   "shortcuts": [
     {
       "name": "Bot Builder",
       "short_name": "Builder",
-      "description": "Create new trading bot",
+      "description": "Create a new trading bot",
       "url": "/?shortcut=builder",
       "icons": [
         {
@@ -109,7 +109,7 @@
     "/",
     "/offline.html",
     "/manifest.json",
-    "/deriv-logo.svg"
+    "/ark-logo.svg"
   ],
   "offline_fallback": "/offline.html"
 }

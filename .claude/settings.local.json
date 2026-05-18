@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cmd /c \"dir C:\\\\Users\\\\ADMIN\\\\desktop\\\\DDBOt\\\\src /s /b\" 2>&1 | Select-Object -First 60)",
+      "PowerShell(cmd /c \"dir C:\\\\Users\\\\ADMIN\\\\desktop\\\\DDBOt\\\\src\\\\components\\\\layout /s /b\" 2>&1)",
+      "PowerShell(cmd /c \"dir C:\\\\Users\\\\ADMIN\\\\desktop\\\\DDBOt\\\\node_modules\\\\@deriv-com\\\\auth-client /b\" 2>&1 | Select-Object -First 20)",
+      "PowerShell(cmd /c \"dir C:\\\\Users\\\\ADMIN\\\\desktop\\\\DDBOt\\\\node_modules\\\\@deriv-com\\\\auth-client\\\\dist /b\" 2>&1 | Select-Object -First 20)",
+      "PowerShell(Set-Content *)",
+      "Bash(npm run *)",
+      "Bash(curl *)"
+    ]
+  }
+}

@@ -2,14 +2,14 @@ import { LocalStorageConstants, LocalStorageUtils, URLUtils } from '@deriv-com/u
 import { isStaging } from '../url/helpers';
 
 export const APP_IDS = {
-    LOCALHOST: 36300,
-    TMP_STAGING: 64584,
-    STAGING: 29934,
-    STAGING_BE: 29934,
-    STAGING_ME: 29934,
-    PRODUCTION: 65555,
-    PRODUCTION_BE: 65556,
-    PRODUCTION_ME: 65557,
+    LOCALHOST: 133647,
+    TMP_STAGING: 133647,
+    STAGING: 133647,
+    STAGING_BE: 133647,
+    STAGING_ME: 133647,
+    PRODUCTION: 133647,
+    PRODUCTION_BE: 133647,
+    PRODUCTION_ME: 133647,
 };
 
 export const livechat_license_id = 12049137;
@@ -23,6 +23,9 @@ export const domain_app_ids = {
     'dbot.deriv.com': APP_IDS.PRODUCTION,
     'dbot.deriv.be': APP_IDS.PRODUCTION_BE,
     'dbot.deriv.me': APP_IDS.PRODUCTION_ME,
+    'arktraders.hub': APP_IDS.PRODUCTION,
+    'www.arktraders.hub': APP_IDS.PRODUCTION,
+    'app.arktraders.hub': APP_IDS.PRODUCTION,
 };
 
 export const getCurrentProductionDomain = () =>

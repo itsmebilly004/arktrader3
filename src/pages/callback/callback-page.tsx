@@ -112,7 +112,7 @@ const CallbackPage = () => {
                             window.location.href = '/';
                         }}
                     >
-                        {'Return to Bot'}
+                        {'Return to ArkTraders Hub'}
                     </Button>
                 );
             }}
