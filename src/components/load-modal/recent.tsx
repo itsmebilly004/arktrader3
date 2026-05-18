@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import { observer } from 'mobx-react-lite';
 import { useStore } from '@/hooks/useStore';
-import { DerivLightDeclinedPoaIcon } from '@deriv/quill-icons';
+import { IllustrativeCriticalIcon } from '@deriv/quill-icons/Illustrative';
 import { Localize } from '@deriv-com/translations';
 import RecentWorkspace from './recent-workspace';
 import WorkspaceControl from './workspace-control';
@@ -37,7 +37,7 @@ const RecentComponent = observer(() => {
         <div className='load-strategy__container'>
             <div className='load-strategy__recent__empty' data-testid='dt-load-strategy__recent__empty'>
                 <div className='load-strategy__recent__empty-icon'>
-                    <DerivLightDeclinedPoaIcon height='128px' width='128px' />
+                    <IllustrativeCriticalIcon height='128px' width='128px' />
                 </div>
                 <div className='load-strategy__recent__empty-title'>
                     <Localize i18n_default_text='You do not have any recent bots' />

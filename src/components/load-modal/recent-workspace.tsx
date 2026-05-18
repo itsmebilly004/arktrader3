@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite';
 import { timeSince } from '@/external/bot-skeleton';
 import { save_types } from '@/external/bot-skeleton/constants/save-type';
 import { useStore } from '@/hooks/useStore';
-import { DerivLightGoogleDriveIcon, DerivLightMyComputerIcon } from '@deriv/quill-icons/Illustration';
+import { IllustrativeComputerIcon, IllustrativeNetworkIcon } from '@deriv/quill-icons/Illustrative';
 import { LegacyReportsIcon } from '@deriv/quill-icons/Legacy';
 
 type TRecentWorkspaceProps = {
@@ -21,10 +21,8 @@ export const getRecentFileIcon = (save_type: string, class_name: string = ''): R
         [save_types.UNSAVED]: (
             <LegacyReportsIcon iconSize='xs' fill='var(--text-general)' className='icon-general-fill-g-path' />
         ),
-        [save_types.LOCAL]: <DerivLightMyComputerIcon height='16px' width='16px' fill='var(--text-general)' />,
-        [save_types.GOOGLE_DRIVE]: (
-            <DerivLightGoogleDriveIcon className={class_name} height='16px' width='16px' fill='var(--text-general)' />
-        ),
+        [save_types.LOCAL]: <IllustrativeComputerIcon height='16px' width='16px' />,
+        [save_types.GOOGLE_DRIVE]: <IllustrativeNetworkIcon className={class_name} height='16px' width='16px' />,
     };
     return icons[save_type as string] as React.ReactElement;
 };

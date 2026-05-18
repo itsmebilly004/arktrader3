@@ -11,11 +11,7 @@ import Text from '@/components/shared_ui/text';
 import ThemedScrollbars from '@/components/shared_ui/themed-scrollbars';
 import { config, save_types } from '@/external/bot-skeleton';
 import { useStore } from '@/hooks/useStore';
-import {
-    DerivLightGoogleDriveIcon,
-    DerivLightLocalDeviceIcon,
-    DerivLightMyComputerIcon,
-} from '@deriv/quill-icons/Illustration';
+import { IllustrativeComputerIcon, IllustrativeNetworkIcon } from '@deriv/quill-icons/Illustrative';
 import { localize } from '@deriv-com/translations';
 import { useDevice } from '@deriv-com/ui';
 import IconRadio from './icon-radio';
@@ -103,13 +99,7 @@ const SaveModalForm: React.FC<TSaveModalForm> = ({
                                         label={
                                             <IconRadio
                                                 text={localize('Local')}
-                                                icon={
-                                                    is_mobile ? (
-                                                        <DerivLightLocalDeviceIcon height='48px' width='48px' />
-                                                    ) : (
-                                                        <DerivLightMyComputerIcon height='48px' width='48px' />
-                                                    )
-                                                }
+                                                icon={<IllustrativeComputerIcon height='48px' width='48px' />}
                                             />
                                         }
                                         value={save_types.LOCAL}
@@ -119,7 +109,7 @@ const SaveModalForm: React.FC<TSaveModalForm> = ({
                                         label={
                                             <IconRadio
                                                 text={'Google Drive'}
-                                                icon={<DerivLightGoogleDriveIcon height='48px' width='48px' />}
+                                                icon={<IllustrativeNetworkIcon height='48px' width='48px' />}
                                                 google_drive_connected={is_authorised}
                                                 onDriveConnect={onDriveConnect}
                                             />
